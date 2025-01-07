@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raiquan Harris" />
+    <meta name="keywords" content="images, pictures, photo, photos" />
+    <meta name="description" content="Web application for photo sharing" />
+    <title>Spots</title>
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="stylesheet" href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/fonts.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/spots-avatar-and-card-images/logo.svg"
+          alt="Spots Logo"
+          class="header__logo"
+        />
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <img
+            src="./images/spots-avatar-and-card-images/avatar.jpg"
+            alt="profile picture"
+            class="profile__avatar"
+          />
+          <div class="profile__column">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button class="profile__edit_button" type="button">
+              <img
+                src="./images/spots-avatar-and-card-images/edit-icon.svg"
+                alt="edit profile"
+              />Edit Profile
+            </button>
+          </div>
+          <button class="profile__add_button" type="button">
+            <strong class="profile__add_button_text">
+              <img
+                src="./images/spots-avatar-and-card-images/new-post-icon.svg"
+                alt="new post"
+              />
+              New Post
+            </strong>
+          </button>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">Val Thorens</p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/2-photo-by-ceiline-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">Restaurant terrace</p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">An outdoor cafe</p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">
+                  A very long brodge, over the forest...
+                </p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">
+                  Tunnel with morning light
+                </p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/spots-avatar-and-card-images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt=""
+                class="card__image"
+              />
+              <div class="card__image_caption">
+                <p class="card__image_caption__text">Mountain house</p>
+                <button class="card__image_like_button"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">2024 &copy; Spots</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,21 +1,17 @@
-# Project 3: Spots
+# Project - Spots, a photo sharing website
 
-### Overview  
+## Description
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+This project is about a website that is responsive and able to adjust to the most popular screen sizes. There are buttons for editing your profile, adding new pictures and liking existing pictures on the page.
+
+A few media queries & flex box were the neccessary techniques used to make this page responsive.
+
+## Pictures and Screen Shots
+
+![Image of layout](<images/demo/Screenshot 2025-01-07 at 1.35.52 PM.png>)
+![Image of edit button function](<images/demo/Screenshot 2025-01-07 at 1.36.51 PM.png>)
+![Image of new post function](<images/demo/Screenshot 2025-01-07 at 1.37.14 PM.png>)
+![Image of liking post function](<images/demo/Screenshot 2025-01-07 at 1.37.44 PM.png>)
+![Image of mobile layout](<images/demo/Screenshot 2025-01-07 at 1.56.50 PM.png>)
+
+The link to your deployed project on GitHub Pages

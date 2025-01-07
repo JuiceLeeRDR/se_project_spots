@@ -28,7 +28,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding-top: 12px;
-  width: 413px;
+  width: 100%;
 }
 .card__image_caption__text {
   font-family: Poppins, Arial, Helvetica, sans-serif;

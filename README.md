@@ -14,4 +14,8 @@ A few media queries & flex box were the neccessary techniques used to make this 
 ![Image of liking post function](<images/demo/Screenshot 2025-01-07 at 1.37.44 PM.png>)
 ![Image of mobile layout](<images/demo/Screenshot 2025-01-07 at 1.56.50 PM.png>)
 
-The link to your deployed project on GitHub Pages
+## Links
+
+https://drive.google.com/file/d/1gO772cMBqy3UgysepC6Br_usgVP7cfpP/view?usp=drive_link
+
+https://juiceleerdr.github.io/se_project_spots/

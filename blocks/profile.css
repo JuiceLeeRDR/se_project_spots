@@ -125,5 +125,10 @@
   .profile__name {
     font-size: 20px;
     line-height: 20px;
+    text-align: center;
+  }
+
+  .profile__description {
+    text-align: center;
   }
 }

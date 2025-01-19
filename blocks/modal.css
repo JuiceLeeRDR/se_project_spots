@@ -1,0 +1,148 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  visibility: hidden;
+}
+
+.modal__opened {
+  visibility: visible;
+}
+
+.modal__container {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 730px;
+  background-color: #ffffff;
+  padding: 32px 50px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.modal__header {
+  margin: 0 0 36px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.modal__close-button {
+  position: absolute;
+  opacity: 40%;
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: #ffffff;
+  top: 32px;
+  right: 50px;
+  background-image: url(../images/close-button.svg);
+}
+
+.modal__close-button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.modal__label {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+
+.modal__input:hover {
+  border-color: #212121;
+  cursor: pointer;
+}
+
+.modal__input {
+  font-family: poppins, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px 16px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  width: 100%;
+  border-color: #838383;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #21212166;
+  border-radius: 8px;
+}
+
+.modal__save-button {
+  border-radius: 8px;
+  background-color: #212121;
+  padding: 18px 32px;
+  width: 156px;
+  height: 52px;
+  color: #fcf5e5;
+  align-self: flex-end;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.modal__save-button:hover {
+  transition-timing-function: ease;
+  background-color: #212121cc;
+  cursor: pointer;
+}
+
+.modal__button_text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.modal__text {
+  margin: 0;
+  padding-bottom: 8px;
+  line-height: 18px;
+  font-size: 16px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    max-width: 300px;
+  }
+
+  .modal__header {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .modal__label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .modal__input {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}

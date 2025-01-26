@@ -24,3 +24,15 @@ const initialCards = [
     link: "https://unsplash.com/photos/people-walking-on-road-near-well-lit-buildings-layMbSJ3YOE",
   },
 ];
+
+const profileEditButton = document.querySelector(".profile__edit-button");
+const profileEditModal = document.querySelector("#edit-modal");
+const profileEditExitButton = document.querySelector(".modal__close-button");
+
+profileEditButton.addEventListener("click", function () {
+  profileEditModal.classList.add("modal__opened");
+});
+
+profileEditExitButton.addEventListener("click", function () {
+  profileEditModal.classList.remove("modal__opened");
+});

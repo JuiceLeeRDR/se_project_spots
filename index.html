@@ -47,74 +47,15 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="View of a cabin in the snowy mountains"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">Val Thorens</h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/2-photo-by-ceiline-from-pexels.jpg"
-                alt="Restaurant store front"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">Restaurant terrace</h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt="People sitting outside a cafe"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">An outdoor cafe</h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="A bridge over the forest"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">
-                  A very long bridge, over the forest...
-                </h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt="A tunnel with good lighting"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">Tunnel with morning light</h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/spots-avatar-and-card-images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="A cabin in the snow"
-                class="card__image"
-              />
-              <div class="card__image-caption">
-                <h2 class="card__text">Mountain house</h2>
-                <button class="card__like-button"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <img src="" alt="" class="card__image" />
+                <div class="card__image-caption">
+                  <h2 class="card__text"></h2>
+                  <button class="card__like-button"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -126,23 +67,23 @@
           <button class="modal__close-button"></button>
           <h2 class="modal__header">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
-            <label for="name" class="modal__label">
+            <label for="profile-name-input" class="modal__label">
               <p class="modal__text">Name</p></label
             >
             <input
               type="text"
-              id="name"
+              id="profile-name-input"
               class="modal__input"
               placeholder="Type your name"
               required
             />
 
-            <label for="description" class="modal__label"
+            <label for="profile-description-input" class="modal__label"
               ><p class="modal__text">Description</p></label
             >
             <input
               type="text"
-              id="description"
+              id="profile-description-input"
               class="modal__input"
               placeholder="Describe yourself"
               required

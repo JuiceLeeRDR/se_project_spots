@@ -1,26 +1,32 @@
 const initialCards = [
   {
     name: "Walking through a Japanese side street ",
+    alt: "Walking through a Japanese side street",
     link: "https://images.unsplash.com/photo-1508504509543-5ca56440e013?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Outdoor cafe near stream in Italy",
+    alt: "Outdoor cafe near stream in Italy",
     link: "https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Mount Oso, Japan",
+    alt: "Mount Oso, Japan",
     link: "https://images.unsplash.com/photo-1520312501384-dbdb83a1cb11?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Pyramid in Egypt",
+    alt: "Pyramid in Egypt",
     link: "https://images.unsplash.com/photo-1562679299-d21b8e13ac09?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "View of ocean from villa steps in Greece",
+    alt: "View of ocean from villa steps in Greece",
     link: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Downtown Tokyo",
+    alt: "Downtown Tokyo",
     link: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
@@ -47,8 +53,8 @@ function getCardElement(data) {
   const cardImage = cardElement.querySelector(".card__image");
 
   cardNameElement.textContent = data.name;
-  console.log(data.link);
   cardImage.src = data.link;
+  cardImage.alt = "Description of the image";
 
   return cardElement;
 }
@@ -56,18 +62,18 @@ function getCardElement(data) {
 function editProfile() {
   modalInputName.value = profileName.textContent;
   modalInputDescription.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal__opened");
+  profileEditModal.classList.add("modal_opened");
 }
 
 function closeProfile() {
-  profileEditModal.classList.remove("modal__opened");
+  profileEditModal.classList.remove("modal_opened");
 }
 
 function handleEditProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = modalInputName.value;
   profileDescription.textContent = modalInputDescription.value;
-  profileEditModal.classList.remove("modal__opened");
+  closeProfile.classList.remove("modal_opened");
 }
 
 profileEditButton.addEventListener("click", editProfile);

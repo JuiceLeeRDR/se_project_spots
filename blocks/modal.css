@@ -13,7 +13,7 @@
   visibility: hidden;
 }
 
-.modal__opened {
+.modal_opened {
   visibility: visible;
 }
 
@@ -74,6 +74,7 @@
   line-height: 20px;
   padding: 12px 16px;
   margin-bottom: 32px;
+  margin-top: 8px;
   box-sizing: border-box;
   width: 100%;
   border-color: #838383;
@@ -109,21 +110,6 @@
   cursor: pointer;
 }
 
-.modal__button_text {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 16px;
-}
-
-.modal__text {
-  margin: 0;
-  padding-bottom: 8px;
-  line-height: 18px;
-  font-size: 16px;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-}
-
 @media screen and (max-width: 627px) {
   .modal__container {
     max-width: 300px;
@@ -144,5 +130,9 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
+  }
+
+  .modal__save-button {
+    width: 100%;
   }
 }

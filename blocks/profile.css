@@ -20,6 +20,7 @@
   overflow: hidden;
   max-width: 420px;
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   color: #212121;
@@ -61,6 +62,7 @@
   line-height: 16px;
   gap: 8px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
@@ -84,6 +86,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {

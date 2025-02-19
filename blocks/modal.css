@@ -202,14 +202,14 @@
   .modal__header {
     padding-top: 10px;
   }
-}
 
-.modal__content_type_preview {
-  padding: 0;
-}
+  .modal__content_type_preview {
+    padding: 0;
+  }
 
-.modal__close-button_type_preview {
-  position: absolute;
-  right: 0;
-  top: -50px;
+  .modal__close-button_type_preview {
+    position: absolute;
+    right: 0;
+    top: -50px;
+  }
 }

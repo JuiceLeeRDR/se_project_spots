@@ -109,7 +109,7 @@ function handleEditProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = modalInputName.value;
   profileDescription.textContent = modalInputDescription.value;
-  closeProfile();
+  closeProfile(editModal);
 }
 
 function handleNewPostFormSubmit(evt) {
@@ -122,7 +122,7 @@ function handleNewPostFormSubmit(evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-  closeProfile();
+  closeProfile(newPostModal);
 }
 
 profileEditButton.addEventListener("click", () => {

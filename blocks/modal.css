@@ -159,6 +159,7 @@
   font-weight: 500;
   line-height: 24px;
   color: #ffffff;
+  margin: 0;
 }
 
 @media screen and (max-width: 627px) {
@@ -204,12 +205,18 @@
   }
 
   .modal__content_type_preview {
-    padding: 0;
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .modal__image {
+    max-width: 288px;
+    padding-left: 2px;
   }
 
   .modal__close-button_type_preview {
     position: absolute;
-    right: 0;
+    right: 5px;
     top: -50px;
   }
 }

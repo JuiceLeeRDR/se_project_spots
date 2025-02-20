@@ -188,6 +188,12 @@
   .modal__save-button {
     width: 100%;
   }
+
+  .modal__close-button_type_preview {
+    position: absolute;
+    right: 5px;
+    top: -50px;
+  }
 }
 
 @media screen and (max-width: 320px) {

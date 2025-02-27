@@ -66,8 +66,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding-bottom: 8px;
   color: rgba(33, 33, 33, 0.7);
+  display: block;
+  margin-bottom: 32px;
 }
 
 .modal__input:hover {
@@ -82,8 +83,6 @@
   font-size: 20px;
   line-height: 20px;
   padding: 12px 16px;
-  margin-bottom: 32px;
-  margin-top: 8px;
   box-sizing: border-box;
   width: 100%;
   border-color: #838383;
@@ -93,6 +92,20 @@
   border-color: #21212166;
   border-radius: 8px;
   cursor: pointer;
+  margin: 8px 0;
+}
+
+.modal__input:invalid {
+  border: solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__input-error {
+  margin-top: 28px;
+  color: rgba(255, 0, 0, 0.7);
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17.6px;
 }
 
 .modal__save-button {
@@ -112,6 +125,10 @@
   line-height: 16px;
   gap: 8px;
   white-space: nowrap;
+}
+
+.modal__save-button_inactive {
+  opacity: 50%;
 }
 
 .modal__save-button:hover {

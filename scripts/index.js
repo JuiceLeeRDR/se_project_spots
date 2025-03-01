@@ -162,7 +162,11 @@ closeButtons.forEach((button) => {
 profileEditButton.addEventListener("click", () => {
   profileInputName.value = profileName.textContent;
   profileInputDescription.value = profileDescription.textContent;
-  resetValidation(profileForm, [profileInputName, profileInputDescription]);
+  resetValidation(
+    profileForm,
+    [profileInputName, profileInputDescription],
+    settings
+  );
   openModal(editModal);
 });
 

@@ -44,7 +44,7 @@ const hasInvalidInput = (inputList) => {
 };
 
 const resetValidation = (formElement, inputList, config) => {
-  inputList.forEach((input, config) => {
+  inputList.forEach((input) => {
     hideInputError(formElement, input, config);
   });
 };

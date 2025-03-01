@@ -4,19 +4,21 @@ const settings = {
   submitButtonSelector: ".modal__save-button",
   inactiveButtonClass: "modal__save-button_inactive",
   inputErrorClass: "modal__input-error",
-  errorClass: "modal__input-error",
+  errorClass: "modal__error",
 };
 
 const showInputError = (formElement, inputElement, errorMessage, config) => {
   const errorMsgElement = formElement.querySelector(
     `#${inputElement.id}-error`
   );
+  inputElement.classList.add("modal__input-error_type");
 
   errorMsgElement.textContent = errorMessage;
 };
 
 const hideInputError = (formElement, inputElement, config) => {
   const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
+  inputElement.classList.remove("modal__input-error_type");
 
   errorElement.textContent = "";
 };
@@ -44,8 +46,10 @@ const resetValidation = (formElement, inputList) => {
 const toggleButtonState = (inputList, buttonElement, config) => {
   if (hasInvalidInput(inputList)) {
     disableButton(buttonElement);
+    buttonElement.classList.add("modal__save-button_inactive");
   } else {
     buttonElement.disabled = false;
+    buttonElement.classList.remove("modal__save-button_inactive");
   }
 };
 

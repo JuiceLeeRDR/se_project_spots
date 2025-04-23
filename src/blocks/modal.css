@@ -22,7 +22,7 @@
 }
 
 .modal__container {
-  /* width: 100%; */
+  width: 100%;
   background-color: #fff;
   border-radius: 8px;
   box-sizing: border-box;
@@ -288,6 +288,7 @@
 @media screen and (max-width: 320px) {
   .modal__container {
     padding: 12px;
+    max-width: 275px;
   }
 
   .modal__close-button {
@@ -313,5 +314,9 @@
     position: absolute;
     right: 5px;
     top: -50px;
+  }
+
+  .modal__save-button {
+    width: 100%;
   }
 }

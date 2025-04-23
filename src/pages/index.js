@@ -122,10 +122,6 @@ function getCardElement(data) {
     handleDeleteCard(cardElement, data._id)
   );
 
-  deleteModalCancelBtn.addEventListener("click", () => {
-    closeModal(deleteModal);
-  });
-
   cardLikeButton.addEventListener("click", (evt) => {
     handleLike(evt, data._id);
   });
@@ -135,15 +131,8 @@ function getCardElement(data) {
 
     api
       .handleLikeStatus(id, isLiked)
-      .then((res) => {
-        if (res) {
-          evt.target.classList.toggle("card__like-button_liked");
-          const likesCount = evt.target.querySelector(".card__like-count");
-          if (likesCount) {
-            likesCount.textContent = res.likes.length;
-          }
-          data.likes = res.likes;
-        }
+      .then(() => {
+        evt.target.classList.toggle("card__like-button_liked");
       })
       .catch(console.error);
   }
@@ -196,6 +185,10 @@ profileEditButton.addEventListener("click", () => {
     settings
   );
   openModal(editModal);
+
+  deleteModalCancelBtn.addEventListener("click", () => {
+    closeModal(deleteModal);
+  });
 });
 
 avatarModalButton.addEventListener("click", () => {
@@ -265,7 +258,6 @@ function handleNewPostFormSubmit(evt) {
   api
     .addNewCard(inputValues)
     .then((cardData) => {
-      cardData.likes = [];
       renderCard(cardData);
       evt.target.reset();
       closeModal(newPostModal);

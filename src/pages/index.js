@@ -185,12 +185,11 @@ profileEditButton.addEventListener("click", () => {
     settings
   );
   openModal(editModal);
-
-  deleteModalCancelBtn.addEventListener("click", () => {
-    closeModal(deleteModal);
-  });
 });
 
+deleteModalCancelBtn.addEventListener("click", () => {
+  closeModal(deleteModal);
+});
 avatarModalButton.addEventListener("click", () => {
   openModal(avatarEditModal);
 });
